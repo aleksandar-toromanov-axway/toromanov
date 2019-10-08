@@ -1,0 +1,15 @@
+---
+
+- hosts: localhost
+  tasks:
+    - name: Prepare directories
+      file:
+        path: ~/temporary
+        mode: 0775
+        state: directory
+
+    - name: Get ansible role "aleksandar_toromanov" from github
+      command: ansible-galaxy install -r requirements.yml
+
+    - include_role:
+        name: aleksandar_toromanov

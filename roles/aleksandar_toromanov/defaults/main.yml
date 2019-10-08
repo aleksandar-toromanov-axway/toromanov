@@ -1,0 +1,3 @@
+---
+# defaults file for aleksandar_toromanov
+terraform_version "0.12.5"
