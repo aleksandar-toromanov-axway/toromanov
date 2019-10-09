@@ -1,6 +1,6 @@
 ---
 
 - name: 'roles'
-  src: 'git@github.com:toromanov'
-  scm: 'git'
+- src: 'git@github.com:toromanov'
+- scm: 'git'
 
