@@ -6,10 +6,10 @@
       url: https://releases.hashicorp.com/terraform/(( terraform_version ))/terraform_(( terraform_version ))_linux_amd64.zip
  
  - name: extract terraform then install
-   unarchove: 
-      copy: no
+   unarchive: 
       dest: /usr/local/bin
       src: /home/atoromanov/temporary/terraform_(( terraform_version ))_linux_amd64.zip
+      copy: no
 
  - name: Check Terraform version
    command: "terraform -v"
