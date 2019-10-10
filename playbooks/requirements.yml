@@ -1,6 +1,4 @@
 ---
 
-- name: aleksandar_toromanov
-- src: https://github.com/aleksandar-toromanov-axway/toromanov
-- scm: git
-
+  - src: https://github.com/aleksandar-toromanov-axway/toromanov
+    name: aleksandar_toromanov
