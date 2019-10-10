@@ -1,15 +1,15 @@
 ---
-# tasks file for aleksandar_toromanov
- - name: download terraform
-   get_url: >
-           url: https://releases.hashicorp.com/terraform/(( terraform_version ))/terraform_(( terraform_version ))_linux_amd64.zip
-           dest: /home/atoromanov/temporary/terraform_(( terraform_version ))_linux_amd64.zip
 
+ - name: download terraform
+   get_url: 
+      dest: /home/atoromanov/temporary/terraform_(( terraform_version ))_linux_amd64.zip
+      url: https://releases.hashicorp.com/terraform/(( terraform_version ))/terraform_(( terraform_version ))_linux_amd64.zip
+ 
  - name: extract terraform then install
    unarchove: 
-        src: /home/atoromanov/temporary/terraform_(( terraform_version ))_linux_amd64.zip
-        dest: /usr/local/bin
-        copy: no
+      copy: false
+      dest: /usr/local/bin
+      src: /home/atoromanov/temporary/terraform_(( terraform_version ))_linux_amd64.zip
 
  - name: Check Terraform version
    command: "terraform -v"
