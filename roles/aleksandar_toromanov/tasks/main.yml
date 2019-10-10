@@ -7,7 +7,7 @@
  
  - name: extract terraform then install
    unarchove: 
-      copy: false
+      copy: no
       dest: /usr/local/bin
       src: /home/atoromanov/temporary/terraform_(( terraform_version ))_linux_amd64.zip
 
