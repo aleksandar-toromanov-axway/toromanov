@@ -12,7 +12,7 @@
         copy: no
 
  - name: Check Terraform version
-  command: "terraform -v"
-  register: teravera
+   command: "terraform -v"
+   register: teravera
 
  - debug: var=teravera
